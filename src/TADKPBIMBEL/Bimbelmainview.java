@@ -54,9 +54,11 @@ public class Bimbelmainview extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         pembayaranpanel = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -114,7 +116,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
         sidepanel.setBackground(new java.awt.Color(56, 125, 116));
 
         btnproduk.setBackground(new java.awt.Color(255, 255, 255));
-        btnproduk.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\leaflet (2).png")); // NOI18N
+        btnproduk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/leaflet (2).png"))); // NOI18N
         btnproduk.setText("Produk");
         btnproduk.setIconTextGap(10);
         btnproduk.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +126,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
         });
 
         btnttg.setBackground(new java.awt.Color(255, 255, 255));
-        btnttg.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\information.png")); // NOI18N
+        btnttg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/information.png"))); // NOI18N
         btnttg.setText("Tentang");
         btnttg.setIconTextGap(10);
         btnttg.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +136,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
         });
 
         btnbyr.setBackground(new java.awt.Color(255, 255, 255));
-        btnbyr.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\wallet.png")); // NOI18N
+        btnbyr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/wallet.png"))); // NOI18N
         btnbyr.setText("Pembayaran");
         btnbyr.setIconTextGap(10);
         btnbyr.addActionListener(new java.awt.event.ActionListener() {
@@ -144,7 +146,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
         });
 
         btnext.setBackground(new java.awt.Color(255, 255, 255));
-        btnext.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\on-off-button.png")); // NOI18N
+        btnext.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/on-off-button.png"))); // NOI18N
         btnext.setText("Keluar");
         btnext.setIconTextGap(10);
         btnext.addActionListener(new java.awt.event.ActionListener() {
@@ -153,7 +155,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\monitor (2).png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/monitor.ico.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -173,7 +175,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
                             .addComponent(btnproduk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnttg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnext, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnbyr, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE))
+                            .addComponent(btnbyr, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sidepanelLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -302,61 +304,72 @@ public class Bimbelmainview extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(56, 125, 116));
         jPanel8.setPreferredSize(new java.awt.Dimension(175, 177));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\user-group.png")); // NOI18N
-
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(247, 246, 231));
         jLabel11.setText("Group");
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/user-group.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addContainerGap(57, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel11))
+                    .addComponent(jLabel11)
                     .addComponent(jLabel9))
-                .addGap(54, 54, 54))
+                .addGap(64, 64, 64))
+            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel8Layout.createSequentialGroup()
+                    .addGap(61, 61, 61)
+                    .addComponent(jLabel20)
+                    .addContainerGap(61, Short.MAX_VALUE)))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(59, 59, 59)
                 .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(jLabel11)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addGap(29, 29, 29))
+            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel8Layout.createSequentialGroup()
+                    .addGap(59, 59, 59)
+                    .addComponent(jLabel20)
+                    .addContainerGap(60, Short.MAX_VALUE)))
         );
 
         jPanel9.setBackground(new java.awt.Color(56, 125, 116));
         jPanel9.setPreferredSize(new java.awt.Dimension(175, 177));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\lenovo\\Downloads\\man-user.png")); // NOI18N
-
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(247, 246, 231));
         jLabel12.setText("Private");
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TADKPBIMBEL/img/man-user.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addGap(65, 65, 65)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel19)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jLabel12))
                     .addComponent(jLabel8))
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
+                .addContainerGap(54, Short.MAX_VALUE)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel12)
@@ -387,30 +400,27 @@ public class Bimbelmainview extends javax.swing.JFrame {
                     .addGroup(produkpanelLayout.createSequentialGroup()
                         .addGap(148, 148, 148)
                         .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnplj1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(288, 288, 288)
+                        .addGap(408, 408, 408)
                         .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(produkpanelLayout.createSequentialGroup()
-                                .addComponent(btnplj2, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+                                    .addComponent(btnplj2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(415, 415, 415)
                                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(100, Short.MAX_VALUE))
-            .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(produkpanelLayout.createSequentialGroup()
-                    .addGap(148, 148, 148)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(1248, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         produkpanelLayout.setVerticalGroup(
             produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(produkpanelLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -418,21 +428,20 @@ public class Bimbelmainview extends javax.swing.JFrame {
                 .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(produkpanelLayout.createSequentialGroup()
                         .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(produkpanelLayout.createSequentialGroup()
                                 .addGap(25, 25, 25)
-                                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(49, 49, 49)
+                                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(produkpanelLayout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(44, 44, 44)
                         .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnplj1)
                             .addComponent(btnplj2)))
                     .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(150, 150, 150))
-            .addGroup(produkpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, produkpanelLayout.createSequentialGroup()
-                    .addContainerGap(295, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(227, 227, 227)))
         );
 
         mainpanel.add(produkpanel, "card2");
@@ -677,7 +686,7 @@ public class Bimbelmainview extends javax.swing.JFrame {
         // gantipanel:
         mainpanel.removeAll();
         mainpanel.revalidate();
-        mainpanel.repaint();
+        //mainpanel.repaint();
         
         //panel:
         mainpanel.add(produkpanel);
@@ -737,12 +746,17 @@ public class Bimbelmainview extends javax.swing.JFrame {
 
     private void btnpesanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpesanActionPerformed
         // TODO add your handling code here:
-        Textout.setText(
+        if (Modulpembe.getSelectedItem().equals("Pilih Pembelajaran")|| Textnama.getText().equals("")  || Textid.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "Modul pembelajaran, nama, dan id line tidak boleh kosong!");
+        } else {
+       
+            Textout.setText(
                 "Model Pembelajaran: " + Modulpembe.getSelectedItem() +"\n"+
                 "Mata Kuliah 1: " + Pilihanmatkul1.getSelectedItem() + " Harga: " + matkul1 +"\n"+
                 "Mata Kuliah 2: " + Pilihanmatkul2.getSelectedItem() + " Harga: " + matkul2 +"\n"+
                 "Mata Kuliah 3: " + Pilihanmatkul3.getSelectedItem() + " Harga: " + matkul3 +"\n"+
                 "Total: " + (modul+matkul1+matkul2+matkul3));
+        }
     }//GEN-LAST:event_btnpesanActionPerformed
 
     private void btnbayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbayarActionPerformed
@@ -751,12 +765,21 @@ public class Bimbelmainview extends javax.swing.JFrame {
         dialogbtn = JOptionPane.YES_NO_OPTION;
         int dialogResult = JOptionPane.showConfirmDialog(this, "Apakah anda yakin?", "Peringatan", dialogbtn);
         
-        if (dialogResult==0){
+        
+        if ( dialogResult==0){
+            
+            if(Modulpembe.getSelectedItem().equals("Pilih Pembelajaran")|| Textnama.getText().equals("")  || Textid.getText().equals("")){
+               Textout.setText("Pembayaran gagal " +"\n"+
+                    Textnama.getText() + " Mohon isi Modul pembelajaran, nama, dan id line ");
+                
+                
+            }else {
+            
             Textout.setText("Pembayaran berhasil " +"\n"+
                     Textnama.getText() + " Selanjutnya akan kami hubungi anda melalui line");
-        } else {
-            
         }
+            
+        } 
             
     }//GEN-LAST:event_btnbayarActionPerformed
 
@@ -910,7 +933,9 @@ public class Bimbelmainview extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
